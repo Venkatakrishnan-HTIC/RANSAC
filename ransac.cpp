@@ -160,7 +160,6 @@ int main()
     double cost_subset = cost(sol1, B);
 
     //Step 4. Add points that were not selected into the model and see how they fit (If they fit well with small error add to alsoInliers)
-
     A_aug = A;
     VectorXd id2 = ones_mat_col_gen(A.rows());
     addcol(&A_aug, id2);
