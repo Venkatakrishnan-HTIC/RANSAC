@@ -36,6 +36,10 @@ VectorXd ones_mat_col_gen(int n){
    return id;
 }
 
+void solve(){
+    
+}
+
 MatrixXd openData(string fileToOpen)
 {
  
@@ -136,10 +140,9 @@ int main()
     // bestErr = something really big;
 
     // while(iter < k){
-        MatrixXd A, B, B_aug, A_aug;
+    MatrixXd A, B, B_aug, A_aug;
 
-        A = openData("incorrect.csv");
-
+    A = openData("incorrect.csv");
         
     //Step 1. Select random subset of the dataset - https://stackoverflow.com/questions/9650991/pick-a-unique-random-subset-from-a-set-of-unique-values
     // (or) https://en.cppreference.com/w/cpp/algorithm/sample (or) https://www.meetingcpp.com/blog/items/randomizing-a-csv-file-with-standard-c.html
@@ -170,7 +173,7 @@ int main()
     cout<<cost_subset<<endl<<cost_whole;
 
     //Step 5. If we get a good amount of points added to alsoInliers, compare current model to previous/best model
-
+    
 
     //Step 6. Repeat the above steps for a certain number of iterations
 
